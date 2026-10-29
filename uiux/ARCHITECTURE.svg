@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%" style="background:#030712;font-family:Inter,system-ui,sans-serif;">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Title & Header -->
+  <text x="550" y="45" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="800" letter-spacing="-0.5">Nexora System Architecture &amp; Data Fabric</text>
+  <text x="550" y="70" text-anchor="middle" fill="#94a3b8" font-size="13">Multi-Institutional Resource Sharing, AI Safety Governance &amp; Immutable Audit Ledger</text>
+
+  <!-- Frontend Container (Vercel) -->
+  <rect x="40" y="110" width="300" height="520" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="40" y="110" width="300" height="42" rx="16" fill="#1e293b" />
+  <text x="60" y="137" fill="#38bdf8" font-size="14" font-weight="700">CLIENT TIER (Vercel Edge)</text>
+  <text x="315" y="137" text-anchor="end" fill="#10b981" font-size="11" font-weight="600">● React + Vite</text>
+
+  <rect x="60" y="170" width="260" height="70" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="75" y="195" fill="#f8fafc" font-size="12" font-weight="700">Explore &amp; NL Matcher</text>
+  <text x="75" y="215" fill="#94a3b8" font-size="11">Catalog, Filters, Natural Language Prompts</text>
+
+  <rect x="60" y="255" width="260" height="70" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="75" y="280" fill="#f8fafc" font-size="12" font-weight="700">10-Step Lifecycle Stepper</text>
+  <text x="75" y="300" fill="#94a3b8" font-size="11">Visual Progress, State Engine (Steps 1-10)</text>
+
+  <rect x="60" y="340" width="260" height="70" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="75" y="365" fill="#f8fafc" font-size="12" font-weight="700">Station Studios (Steps 7 &amp; 8)</text>
+  <text x="75" y="385" fill="#94a3b8" font-size="11">Check-In Baseline &amp; Handover Inspection</text>
+
+  <rect x="60" y="425" width="260" height="70" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="75" y="450" fill="#f8fafc" font-size="12" font-weight="700">Persona Quick-Switcher</text>
+  <text x="75" y="470" fill="#94a3b8" font-size="11">Role-Based Testbed (Manager / Researcher)</text>
+
+  <rect x="60" y="510" width="260" height="70" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="75" y="535" fill="#f8fafc" font-size="12" font-weight="700">Consortium Audit Viewer</text>
+  <text x="75" y="555" fill="#94a3b8" font-size="11">JSON Diff Inspection, Cryptographic Hashes</text>
+
+  <!-- Connectors -->
+  <line x1="340" y1="360" x2="400" y2="360" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="4 4" />
+  <polygon points="400,360 392,355 392,365" fill="#6366f1" />
+  <text x="370" y="345" text-anchor="middle" fill="#818cf8" font-size="10" font-weight="700">REST / JSON</text>
+
+  <!-- Backend API Container (Render) -->
+  <rect x="400" y="110" width="320" height="520" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="400" y="110" width="320" height="42" rx="16" fill="#1e293b" />
+  <text x="420" y="137" fill="#818cf8" font-size="14" font-weight="700">APPLICATION SERVER (Render)</text>
+  <text x="700" y="137" text-anchor="end" fill="#10b981" font-size="11" font-weight="600">● Express + WAL</text>
+
+  <rect x="420" y="170" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="193" fill="#f8fafc" font-size="12" font-weight="700">Auth &amp; Persona RBAC</text>
+  <text x="435" y="210" fill="#94a3b8" font-size="10">JWT, Role Guard, Institutional Credential Passports</text>
+
+  <rect x="420" y="235" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="258" fill="#f8fafc" font-size="12" font-weight="700">10-Step Booking Lifecycle Engine</text>
+  <text x="435" y="275" fill="#94a3b8" font-size="10">Pending → Approved → Checked-In → Returned</text>
+
+  <rect x="420" y="300" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="323" fill="#f8fafc" font-size="12" font-weight="700">Fair Allocation &amp; Anti-Monopoly</text>
+  <text x="435" y="340" fill="#94a3b8" font-size="10">Rolling 7-Day Usage Tracking, Waitlist Scoring</text>
+
+  <rect x="420" y="365" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="388" fill="#f8fafc" font-size="12" font-weight="700">Step 7 &amp; 8 Condition Handover</text>
+  <text x="435" y="405" fill="#94a3b8" font-size="10">Baseline Storage, Safety Checklist Validation</text>
+
+  <rect x="420" y="430" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="453" fill="#f8fafc" font-size="12" font-weight="700">Step 9 Incident &amp; Dispute Handler</text>
+  <text x="435" y="470" fill="#94a3b8" font-size="10">Deposit Forfeiture / Refund, Manager Review</text>
+
+  <rect x="420" y="495" width="280" height="55" rx="10" fill="#030712" stroke="#1e293b" />
+  <text x="435" y="518" fill="#f8fafc" font-size="12" font-weight="700">Step 10 Immutable Audit Logger</text>
+  <text x="435" y="535" fill="#94a3b8" font-size="10">Tamper-Evident Chronological Ledger Writer</text>
+
+  <!-- Connectors to AI & DB -->
+  <line x1="720" y1="260" x2="770" y2="260" stroke="#06b6d4" stroke-width="2.5" />
+  <polygon points="770,260 762,255 762,265" fill="#06b6d4" />
+
+  <line x1="720" y1="480" x2="770" y2="480" stroke="#10b981" stroke-width="2.5" />
+  <polygon points="770,480 762,475 762,485" fill="#10b981" />
+
+  <!-- AI Suite Container -->
+  <rect x="770" y="110" width="290" height="280" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="770" y="110" width="290" height="42" rx="16" fill="#1e293b" />
+  <text x="790" y="137" fill="#22d3ee" font-size="14" font-weight="700">AI SAFETY SUITE (/ai)</text>
+
+  <rect x="785" y="165" width="260" height="48" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="185" fill="#f8fafc" font-size="11" font-weight="700">1. Natural Language Matcher</text>
+  <text x="795" y="200" fill="#94a3b8" font-size="10">Keyword Taxonomy, Specs Synergy Scoring</text>
+
+  <rect x="785" y="220" width="260" height="48" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="240" fill="#f8fafc" font-size="11" font-weight="700">2. Safety Document OCR Verifier</text>
+  <text x="795" y="255" fill="#94a3b8" font-size="10">Expiration Auditing, Issuer Whitelist Check</text>
+
+  <rect x="785" y="275" width="260" height="48" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="295" fill="#f8fafc" font-size="11" font-weight="700">3. Vision Condition Diff Analyzer</text>
+  <text x="795" y="310" fill="#94a3b8" font-size="10">Wear vs Damage, Cost Estimation, Deposit Hold</text>
+
+  <rect x="785" y="330" width="260" height="48" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="350" fill="#f8fafc" font-size="11" font-weight="700">4. Fairness &amp; Gini Optimizer</text>
+  <text x="795" y="365" fill="#94a3b8" font-size="10">Monopoly Alert, Underused Asset Promotion</text>
+
+  <!-- Database & Storage Container -->
+  <rect x="770" y="410" width="290" height="220" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="770" y="410" width="290" height="42" rx="16" fill="#1e293b" />
+  <text x="790" y="437" fill="#10b981" font-size="14" font-weight="700">PERSISTENCE TIER</text>
+
+  <rect x="785" y="465" width="260" height="45" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="485" fill="#f8fafc" font-size="11" font-weight="700">SQLite High-Concurrency WAL</text>
+  <text x="795" y="500" fill="#94a3b8" font-size="10">Zero-Config Persistent Embedded Store</text>
+
+  <rect x="785" y="518" width="260" height="45" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="538" fill="#f8fafc" font-size="11" font-weight="700">Audit Trail Table (Append-Only)</text>
+  <text x="795" y="553" fill="#94a3b8" font-size="10">Immutable State Proofs &amp; Cryptographic Hashes</text>
+
+  <rect x="785" y="571" width="260" height="45" rx="8" fill="#030712" stroke="#1e293b" />
+  <text x="795" y="591" fill="#f8fafc" font-size="11" font-weight="700">PostgreSQL Cloud Ready</text>
+  <text x="795" y="606" fill="#94a3b8" font-size="10">Direct DATABASE_URL Switch on Render</text>
+</svg>
